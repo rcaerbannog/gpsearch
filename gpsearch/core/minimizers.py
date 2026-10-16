@@ -67,7 +67,7 @@ def funmin(fun, jac, inputs, opt_method="l-bfgs-b", args=(),
     if parallel_restarts:
         res = Parallel(n_jobs=n_jobs, backend="loky")(
                        delayed(minimize)(fun, 
-                                         np.atleast_2d(x0[i]), 
+                                         x0[i], 
                                          args=args,
                                          method=opt_method, 
                                          jac=jac,
@@ -77,7 +77,7 @@ def funmin(fun, jac, inputs, opt_method="l-bfgs-b", args=(),
 
     else:
         res = [ minimize(fun, 
-                         np.atleast_2d(x0[i]), 
+                         x0[i], 
                          args=args, 
                          method=opt_method,
                          jac=jac, 

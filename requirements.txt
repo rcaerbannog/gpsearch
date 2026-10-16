@@ -1,8 +1,10 @@
-GPy==1.9.9
-joblib==1.2.0
-KDEpy==1.0.2
-matplotlib==3.1.1
-numpy==1.22.0
-pyDOE==0.3.8
-scikit-learn==0.20.1
-scipy==1.10.0
+GPy>=1.14.2
+joblib>=1.2.0
+KDEpy>=1.0.2
+matplotlib>=3.5.0
+numpy>=1.22.0
+pydoe>=0.3.8
+scikit-learn>=0.20.1
+scipy>=1.10.0
+setuptools>=82.0.0
+wheel>=0.48.0, <1.0.0

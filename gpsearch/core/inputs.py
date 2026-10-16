@@ -1,7 +1,7 @@
 import numpy as np
 import GPy
 from GPy.util.linalg import pdinv
-import pyDOE as doe
+import pydoe as doe
 from scipy.stats import uniform
 from .utils import process_parameters
 
