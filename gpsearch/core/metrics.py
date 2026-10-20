@@ -124,7 +124,7 @@ def log_pdf(m_list, inputs, pt=None, pts=None, clip=True,
 
         log_diff = np.abs(log_yb-log_yt)
         noInf = np.isfinite(log_diff)
-        res[ii] = np.trapz(log_diff[noInf], x_eva[noInf])
+        res[ii] = np.trapzoid(log_diff[noInf], x_eva[noInf])
 
     if accumulate:
         res = np.minimum.accumulate(res)

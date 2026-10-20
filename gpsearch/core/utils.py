@@ -60,7 +60,7 @@ def grid_nint(pts, fmu, ngrid):
              for i in range(ndim) ]
     I = fmug
     for ii in range(ndim):
-        I = np.trapz(I, x=axes[ii], axis=0)
+        I = np.trapzoid(I, x=axes[ii], axis=0)
     return I
 
 
